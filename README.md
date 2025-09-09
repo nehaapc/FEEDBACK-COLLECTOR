@@ -15,5 +15,5 @@ I adapted the core logic from my workplace harassment reporting portal and restr
 🛠 Tech Stack
 - HTML, CSS, JavaScript
 - EmailJS (for email delivery)
-- Netlify / Render (for deployment)
+- Render (for deployment)
 This project reflects my focus on ethical design, user comfort, and clean UI/UX. It’s fully customizable and can be adapted for different audiences or branding needs. Whether you’re collecting feedback for a product, event, or internal team, this portal makes it easy, safe, and even a little fun.
