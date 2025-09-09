@@ -1,0 +1,150 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #fdf1f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  text-shadow: 0 0 5px #ffb6c1;
+}
+
+.subtitle {
+  color: #6a5acd;
+  font-style: italic;
+}
+
+/* Card Layout */
+.card {
+  background-color: #ffffff;
+  border: 2px solid #add8e6;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.3);
+}
+
+/* Form Elements */
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #6a5acd;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ffb6d4;
+  border-radius: 8px;
+  background-color: #fdf1f7;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 8px #add8e6;
+  outline: none;
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid > div {
+  flex: 1;
+}
+
+/* Button Styling */
+button.primary {
+  background-color: #add8e6;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+button.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffb6c1;
+  background-color: #cd4b8c;
+}
+
+/* Error Message */
+.error {
+  color: #ff4d4d;
+  margin-top: 1rem;
+}
+
+/* Info Section Links */
+.card.info a {
+  color: #6a5acd;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.card.info a:hover {
+  color: #ff69b4;
+}
+
+/* Modal Styling */
+dialog {
+  background-color: #fff;
+  border: 2px solid #add8e6;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #333;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+}
+
+dialog h3 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+dialog button {
+  background-color: #add8e6;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+dialog button:hover {
+  background-color: #ff69b4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+}

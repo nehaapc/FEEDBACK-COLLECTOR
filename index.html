@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anonymous Feedback Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Share Your Feedback :)</h1>
+    <p class="subtitle">Your voice matters.</p>
+    <p class="subtitle">By Neha Asif Poya Care.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Submit Feedback</h2>
+      <form id="reportForm">
+        <label>Your Name (optional)</label>
+        <input type="text" name="name" placeholder="e.g., Neha PC" />
+
+        <label>Your Email (optional)</label>
+        <input type="email" name="email" placeholder="e.g., youremail@domain.com" />
+
+        <label>Organization / Platform (optional)</label>
+        <input type="text" name="org" placeholder="e.g., ABC Corp, Website, Event" />
+
+        <label>Feedback Type</label>
+        <select name="category" required>
+          <option value="">Select</option>
+          <option>General Feedback</option>
+          <option>Bug Report</option>
+          <option>Feature Request</option>
+          <option>User Experience</option>
+          <option>Accessibility Concern</option>
+          <option>Other</option>
+        </select>
+
+        <label>Your Feedback (min 15 characters)</label>
+        <textarea name="description" rows="6" required placeholder="Share your thoughts..."></textarea>
+
+        <div class="grid">
+          <div>
+            <label>Date of Experience (optional)</label>
+            <input type="text" name="incident_time" placeholder="e.g., Sep 9, 2025" />
+          </div>
+          <div>
+            <label>Platform / Location (optional)</label>
+            <input type="text" name="location" placeholder="e.g., Website, Mobile App, Event" />
+          </div>
+        </div>
+
+        <label>Send feedback to email (optional)</label>
+        <input type="email" name="recipient_email" placeholder="e.g., youremail@domain.com" />
+        <small>If left blank, feedback will go to <strong>nehapcatwork@hotmail.com</strong></small>
+
+        <button type="submit" class="primary">Submit Feedback</button>
+        <p id="error" class="error" style="display:none;"></p>
+      </form>
+    </section>
+
+    <section class="card info">
+      <h2>💅 Why Feedback Matters</h2>
+      <ul>
+        <li>💡 Got ideas? Spill the tea. Help us glow up with your genius suggestions</li>
+        <li>🛠️ Found a bug? Drag it. We squash bugs like it’s our cardio.</li>
+        <li>🤝 Had a vibe check? Tell us everything. Your experience helps us level up for everyone.</li>
+      </ul>
+    </section>
+  </main>
+
+  <dialog id="successModal">
+    <h3>Feedback submitted</h3>
+    <p>Your feedback has been sent successfully.</p>
+    <p>Tracking Code: <strong id="trackingCode"></strong></p>
+    <form method="dialog">
+      <button>Close</button>
+    </form>
+  </dialog>
+
+  <!-- ✅ Load EmailJS globally -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="./test.js"></script>
+</body>
+</html>
